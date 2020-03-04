@@ -61,10 +61,12 @@ Resources:
         Ref: SqlServerInstanceName
       LicenseModel: license-included
       Engine: sqlserver-se
-      EngineVersion: 12.00.4422.0.v1
+      EngineVersion: 14.00.3049.1.v1
       MultiAZ: true
-      DBInstanceClass: db.m4.large
-      AllocatedStorage: '500'
+      DBInstanceClass: db.m5.large
+      StorageType: 'gp2'
+      AllocatedStorage: '100'
+      MaxAllocatedStorage: '1000'
       MasterUsername:
         Ref: DatabaseUsername
       MasterUserPassword:
